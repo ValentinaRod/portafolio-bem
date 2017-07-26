@@ -5800,51 +5800,7 @@ button.close {
 *,
 *, :before
 *, :after {
-  box-sizing: border-box; }
-
-.m-menu {
-  background-color: #F04949; }
-
-.m-menu__item {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-  list-style: none;
-  text-decoration: none;
-  display: flex;
-  flex: auto; }
-
-.m-menu__item__link {
-  color: #fff;
-  font-weight: bold;
-  text-decoration: none;
-  display: block;
-  text-align: center;
-  padding: 5rem; }
-
-.profile {
-  background-color: #203748;
-  border-radius: 10px solid #203748;
-  width: 192px;
-  height: 28px; }
-  .profile:nth-child(1) {
-    margin-left: auto;
-    position: relative;
-    top: 10px; }
-
-.m-menu__img {
-  width: 100px;
-  height: 100px;
-  background: red;
-  -moz-border-radius: 50px;
-  -webkit-border-radius: 50px;
-  border-radius: 50px;
-  border: 2px solid #fff;
-  flex-direction: row;
-  justify-content: flex-end; }
-  .m-menu__img:nth-child(1) {
-    margin-left: auto;
-    position: relative;
-    top: 10px; }
+  box-sizing: border-box;
+  margin: 0; }
 
 /*# sourceMappingURL=main.css.map */
