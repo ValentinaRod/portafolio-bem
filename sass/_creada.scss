@@ -1,0 +1,143 @@
+.creada{
+
+background-color: #203748;
+color: #fff;
+}
+
+
+
+img {
+    height: 150px;
+    width: 100%;
+}
+
+div [class^="col-"] {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.card {
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.card-title {
+    font-size: 15px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.card-title i {
+    font-size: 15px;
+    transition: 1s;
+    cursor: pointer;
+    color: #ffa710;
+}
+
+.card-title i:hover {
+    transform: scale(1.25) rotate(100deg);
+    color: #18d4ca;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card-text {
+    height: 80px;
+}
+
+.card::before, .card::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: scale3d(0, 0, 1);
+    transition: transform .3s ease-out 0s;
+    background: rgba(255, 255, 255, 0.1);
+    content: '';
+    pointer-events: none;
+}
+
+.card::before {
+    transform-origin: left top;
+}
+
+.card::after {
+    transform-origin: right bottom;
+}
+
+.card:hover::before, .card:hover::after, .card:focus::before, .card:focus::after {
+    transform: scale3d(1, 1, 1);
+}
+
+
+//contacto..............................................
+
+
+
+.contacto{
+ 
+    background-color: #F04949;
+    margin-top:-20px;
+}
+
+
+.centered {
+  margin: 0 auto;
+  text-align: center;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.bottom-line {
+  border-bottom: 2px solid #c3c3c3;
+}
+::-webkit-resizer {
+  display: none;
+}
+
+.arrow-up {
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  top: 1px;
+  width: 0;
+  height: 0;
+  margin-top: 10px;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #f7f7f7;
+}
+form#contact {
+  margin: 0 auto;
+  text-align: center;
+  border-bottom: 2px solid #c3c3c3;
+  width: 300px;
+  padding: 20px;
+  background-color: #f7f7f7;
+}
+.form-control {
+  box-shadow: none;
+  border-radius: 0;
+  background-color: #f7f7f7;
+  outline: none;
+  border: none;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+}
+textarea#message {
+  min-height: 100px;
+  resize: vertical;
+  overflow: hidden;
+  border-bottom: 0px;
+}
+button#send {
+  text-transform: uppercase;
+  border-bottom: 2px solid #c3c3c3;
+  margin-top: 20px;
+  letter-spacing: 4px;
+}
