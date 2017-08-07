@@ -4,8 +4,10 @@
 }
 
 .article__img{
-	@include imgredondaGrande;
+	@include imgRedonda;
 	border-radius: 210px;
+	width:400px;
+	height:400px;
 	display:flex;
 	flex-direction: row;
 	justify-content:flex-end;
@@ -41,8 +43,8 @@
 }
 
 .article_btn{
-	border-radius: 300px;
-	width: 390px;
+	border-radius: 100px;
+	width: 270px;
 	height: 93px;
 	background-color: $colorVerde;
 	font-size: 3rem;
@@ -51,4 +53,67 @@
 	&:hover{
 		color: rgba(0,0,0,0.8);
 	}
+}
+//redes sociales
+
+
+@mixin font-smoothing() {
+    // Font antialising on Mac OS X
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.social-icons {
+    list-style: none;
+    margin-top: 50px;
+    padding: 0;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+
+    li {
+        display: inline-block;
+        margin: 0 0.25em;
+    }
+
+    span {
+        display: block;
+        width: 0; height: 0;
+        overflow: hidden;
+    }
+
+    a {
+        display: inline-block;
+        width: 2.5em;
+        height: 2.5em;
+        border-radius: 50%;
+        text-decoration: none;
+        color: white;
+        text-align: center;
+
+        &:before {
+            font: 1.5em/1.75 "FontAwesome";
+            @include font-smoothing();
+        }
+
+        $icons: (
+            twitter:  (char: "\f099", color: #55acee),
+            google:   (char: "\f0d5", color: #dd4b39),
+            facebook: (char: "\f09a", color: #3b5998),
+            github:   (char: "\f09b", color: #231f20),
+            linkedin: (char: "\f0e1", color: #0977b5),
+            dribbble: (char: "\f17d", color: #ea4c89),
+            rss:      (char: "\f09e", color: #ff6600)
+        );
+
+        @each $social, $icon in $icons {
+            &[href*="#{$social}"] {
+                background-color: map-get($icon, color);
+
+                &:before {
+                    content: map-get($icon, char);
+                }
+            }
+        }
+    }
 }

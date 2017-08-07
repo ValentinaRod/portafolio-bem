@@ -7,17 +7,18 @@
 
 .m-menu{
 	background-color: $colorRosado;
+	height:70px;
 
 }
 
 .m-menu__item{
 	margin-top:0;
 	margin-bottom:0;
-	padding-left: 0;
 	list-style:none;
 	text-decoration:none;
 	display:flex;
-	flex:auto;
+	flex-direction:row;
+	justify-content:center;
 }
 
 .m-menu__item__link{
@@ -26,36 +27,31 @@
 	text-decoration:none;
 	display:block;
 	text-align:center;
-	padding: 5rem;
+	padding: 3rem;
 	  
 }
 
-.profile {
+.btn-primary {
 		background-color: $colorAzul;
 		border-radius: 10px solid $colorAzul;
-		width:192px;
-		height:28px;
-		&:nth-child(1){
-		margin-left: auto;
-		position: relative;
-		top: 10px;
-}
+		height: 38px;
+		position:relative;
+		top:20px;
+		
 
-}
+	}	
 
 
 .m-menu__img{
-	@include imgRedonda;
+	
 	border: 2px solid #fff;
 	flex-direction: row;
 	justify-content:flex-end;
-	&:nth-child(1){
-		margin-left: auto;
-		position: relative;
-		top: 10px;
+	width:65px;
+	height:65px;
 	}
 
-}
+
 
 
 

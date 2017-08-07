@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css";
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
@@ -5804,16 +5805,17 @@ button.close {
   box-sizing: border-box; }
 
 .m-menu {
-  background-color: #F04949; }
+  background-color: #F04949;
+  height: 70px; }
 
 .m-menu__item {
   margin-top: 0;
   margin-bottom: 0;
-  padding-left: 0;
   list-style: none;
   text-decoration: none;
   display: flex;
-  flex: auto; }
+  flex-direction: row;
+  justify-content: center; }
 
 .m-menu__item__link {
   color: #fff;
@@ -5821,45 +5823,36 @@ button.close {
   text-decoration: none;
   display: block;
   text-align: center;
-  padding: 5rem; }
+  padding: 3rem; }
 
-.profile {
+.btn-primary {
   background-color: #203748;
   border-radius: 10px solid #203748;
-  width: 192px;
-  height: 28px; }
-  .profile:nth-child(1) {
-    margin-left: auto;
-    position: relative;
-    top: 10px; }
+  height: 38px;
+  position: relative;
+  top: 20px; }
 
 .m-menu__img {
-  width: 100px;
-  height: 100px;
-  background: red;
-  -moz-border-radius: 50px;
-  -webkit-border-radius: 50px;
-  border-radius: 50px;
   border: 2px solid #fff;
   flex-direction: row;
-  justify-content: flex-end; }
-  .m-menu__img:nth-child(1) {
-    margin-left: auto;
-    position: relative;
-    top: 10px; }
+  justify-content: flex-end;
+  width: 65px;
+  height: 65px; }
 
 .section1 {
   background-color: #203748;
   height: 700px; }
 
 .article__img {
-  width: 400px;
-  height: 400px;
+  width: 100px;
+  height: 100px;
   background: red;
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
   border-radius: 50px;
   border-radius: 210px;
+  width: 400px;
+  height: 400px;
   display: flex;
   flex-direction: row;
   justify-content: flex-end; }
@@ -5888,8 +5881,8 @@ button.close {
   font-family: "Zilla Slab", serif; }
 
 .article_btn {
-  border-radius: 300px;
-  width: 390px;
+  border-radius: 100px;
+  width: 270px;
   height: 93px;
   background-color: #39D084;
   font-size: 3rem;
@@ -5897,5 +5890,61 @@ button.close {
   font-family: "Zilla Slab", serif; }
   .article_btn:hover {
     color: rgba(0, 0, 0, 0.8); }
+
+.social-icons {
+  list-style: none;
+  margin-top: 50px;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  .social-icons li {
+    display: inline-block;
+    margin: 0 0.25em; }
+  .social-icons span {
+    display: block;
+    width: 0;
+    height: 0;
+    overflow: hidden; }
+  .social-icons a {
+    display: inline-block;
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 50%;
+    text-decoration: none;
+    color: white;
+    text-align: center; }
+    .social-icons a:before {
+      font: 1.5em/1.75 "FontAwesome";
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale; }
+    .social-icons a[href*="twitter"] {
+      background-color: #55acee; }
+      .social-icons a[href*="twitter"]:before {
+        content: ""; }
+    .social-icons a[href*="google"] {
+      background-color: #dd4b39; }
+      .social-icons a[href*="google"]:before {
+        content: ""; }
+    .social-icons a[href*="facebook"] {
+      background-color: #3b5998; }
+      .social-icons a[href*="facebook"]:before {
+        content: ""; }
+    .social-icons a[href*="github"] {
+      background-color: #231f20; }
+      .social-icons a[href*="github"]:before {
+        content: ""; }
+    .social-icons a[href*="linkedin"] {
+      background-color: #0977b5; }
+      .social-icons a[href*="linkedin"]:before {
+        content: ""; }
+    .social-icons a[href*="dribbble"] {
+      background-color: #ea4c89; }
+      .social-icons a[href*="dribbble"]:before {
+        content: ""; }
+    .social-icons a[href*="rss"] {
+      background-color: #ff6600; }
+      .social-icons a[href*="rss"]:before {
+        content: ""; }
 
 /*# sourceMappingURL=main.css.map */
